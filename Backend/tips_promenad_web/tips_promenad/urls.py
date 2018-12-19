@@ -1,8 +1,8 @@
 from rest_framework import routers
-from .views import UserViewSet
+from tips_promenad.views import QuizPointViewSet
 
 router = routers.DefaultRouter()
-router.register(r'users', UserViewSet, base_name='users')
+router.register(r'users', QuizPointViewSet, base_name='users')
 
 urlpatterns = router.urls
 
